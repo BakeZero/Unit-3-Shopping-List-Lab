@@ -1,0 +1,15 @@
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\bin\Debug\net6.0\Unit_3_Shopping_List_Lab.exe
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\bin\Debug\net6.0\Unit_3_Shopping_List_Lab.deps.json
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\bin\Debug\net6.0\Unit_3_Shopping_List_Lab.runtimeconfig.json
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\bin\Debug\net6.0\Unit_3_Shopping_List_Lab.dll
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\bin\Debug\net6.0\Unit_3_Shopping_List_Lab.pdb
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.csproj.AssemblyReference.cache
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.AssemblyInfoInputs.cache
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.AssemblyInfo.cs
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.csproj.CoreCompileInputs.cache
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.dll
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\refint\Unit_3_Shopping_List_Lab.dll
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.pdb
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\Unit_3_Shopping_List_Lab.genruntimeconfig.cache
+C:\Users\harry\Desktop\Grand Circus\Unit_3_Shopping_List_Lab\Unit_3_Shopping_List_Lab\obj\Debug\net6.0\ref\Unit_3_Shopping_List_Lab.dll
