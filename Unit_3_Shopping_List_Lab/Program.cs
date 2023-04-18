@@ -55,12 +55,27 @@ class Program
     static void DisplayOrder(Dictionary<string, decimal> menu, List<string> cart)
     {
         decimal cost = 0.0m;
+        Dictionary<string, decimal> tempDict = new Dictionary<string, decimal>();
         Console.WriteLine("\nThanks for your order!\nHere's what you got:");
+
+        /* Sorting the cart by cost, ascending order */
+        foreach (string item in cart)
+        {
+            tempDict.Add(item, menu[item]);
+        }
+        var sortedByCost = from entry in tempDict orderby entry.Value ascending select entry;
+        foreach (var item in sortedByCost)
+        {
+            Console.WriteLine(string.Format("{0}\t\t${1}", item.Key.ToString().PadRight(10), item.Value));
+            cost += item.Value;
+        }
+
+        /*
         foreach (string item in cart)
         {
             Console.WriteLine(string.Format("{0}\t\t${1}", item.ToString().PadRight(10), menu[item]));
             cost += menu[item];
-        }
-        Console.WriteLine($"Average price per item in order was ${cost/cart.Count}");
+        }*/
+        Console.WriteLine($"Average price per item in order was ${cost / cart.Count}");
     }
 }
