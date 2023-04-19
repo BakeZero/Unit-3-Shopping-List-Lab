@@ -18,7 +18,6 @@ class Program
         };
         List<string> shoppingList = new List<string>();
         Console.WriteLine("Welcome to Chirpus Market!");
-        string prompt = "y";
         do
         {
             Console.WriteLine();
@@ -35,9 +34,8 @@ class Program
                 Console.WriteLine("Sorry, we don't have those. Please try again.");
                 continue;
             }
-            Console.Write("Would you like to order anything else (y/n)? ");
-            prompt = Console.ReadLine();
-        } while (prompt == "y");
+
+        } while (Continue());
         DisplayOrder(menu, shoppingList);
     }
     static void DisplayMenu(Dictionary<string, decimal> menu)
@@ -45,10 +43,7 @@ class Program
         Console.WriteLine("Item\t\t\tPrice");
         Console.WriteLine("==============================");
         foreach (var e in menu)
-        {
-            //Console.WriteLine($"{e.Key}\t\t${e.Value}");
             Console.WriteLine(string.Format("{0}\t\t${1}",e.Key.ToString().PadRight(10),e.Value));
-        }
         Console.WriteLine();
     }
 
@@ -61,21 +56,36 @@ class Program
         /* Sorting the cart by cost, ascending order */
         foreach (string item in cart)
         {
-            tempDict.Add(item, menu[item]);
-        }
-        var sortedByCost = from entry in tempDict orderby entry.Value ascending select entry;
-        foreach (var item in sortedByCost)
-        {
-            Console.WriteLine(string.Format("{0}\t\t${1}", item.Key.ToString().PadRight(10), item.Value));
-            cost += item.Value;
+            if (tempDict.ContainsKey(item))
+                tempDict[item] += menu[item];
+            else
+                tempDict.Add(item, menu[item]);
+            cost += menu[item];
         }
 
-        /*
-        foreach (string item in cart)
+        Dictionary<string, decimal> sortedByCost = tempDict.OrderBy(elem => elem.Value).ToDictionary(x=>x.Key, x=>x.Value);
+
+        /* Displaying all items in cart */
+        foreach (KeyValuePair<string, decimal> item in sortedByCost)
         {
-            Console.WriteLine(string.Format("{0}\t\t${1}", item.ToString().PadRight(10), menu[item]));
-            cost += menu[item];
-        }*/
-        Console.WriteLine($"Average price per item in order was ${cost / cart.Count}");
+            Console.WriteLine(string.Format("{0}\t\t${1}", item.Key.ToString().PadRight(10), item.Value));
+        }
+
+        Console.WriteLine($"Average price per item in order was ${Math.Round(cost / cart.Count, 2)}");
+    }
+
+    static bool Continue()
+    {
+        Console.Write("Would you like to order anything else (y/n)? ");
+        string prompt = Console.ReadLine();
+        if (prompt == "y")
+            return true;
+        else if (prompt == "n")
+            return false;
+        else
+        {
+            Console.WriteLine("Invalid input.");
+            return Continue();
+        }
     }
 }
